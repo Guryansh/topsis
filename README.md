@@ -27,6 +27,7 @@ Install the package with following command
 - Weights and Imapcts seperated by commas
 - Impacts should be give in + and - for maximization and minimization respectively
 - Files should be of format .csv
+- If anu input contains spaces, make sure to enclose it between double quotes (" ").
 ```bash
 guryansh_topsis <inputFileName> <Weights> <Impacts> <resultFileName>
 ```
