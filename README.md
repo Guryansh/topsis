@@ -32,6 +32,29 @@ guryansh_topsis <inputFileName> <Weights> <Impacts> <resultFileName>
 ```
 
 ## Example
+
+### Sample Input File Format
+The input CSV file should have the following structure:
+
+| Fund Name | P1  | P2  | P3  | P4  | P5  |
+|-----------|-----|-----|-----|-----|-----|
+| M1        | 0.84| 0.71| 6.7 | 42.1| 12.59|
+| M2        | 0.91| 0.83| 7.0 | 31.7| 10.11|
+| ...       | ... | ... | ... | ... | ... |
+
+weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 , 0.25 ]
+impacts vector = [ - , + , + , + , + ]
+
+### Sample Output File Format
+
+The output CSV file will have the following structure:
+
+| Fund Name | P1  | P2  | P3  | P4  | P5  | Topsis Score | Rank |
+|-----------|-----|-----|-----|-----|-----|--------------|------|
+| M1        | 0.84| 0.71| 6.7 | 42.1| 12.59| 0.3653       | 6    |
+| M2        | 0.91| 0.83| 7.0 | 31.7| 10.11| 0.2819       | 8    |
+| ...       | ... | ... | ... | ... | ...  | ...          | ...  |
+
 ```javascript
 guryansh_topsis 102218044-data.csv ".25,.25,.25,.25,.25" "-,+,+,+,+" output.csv
 
