@@ -46,6 +46,11 @@ The input CSV file should have the following structure:
 - weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 , 0.25 ]
 - impacts vector = [ - , + , + , + , + ]
 
+```javascript
+guryansh_topsis 102218044-data.csv ".25,.25,.25,.25,.25" "-,+,+,+,+" output.csv
+
+```
+
 ### Sample Output File Format
 
 The output CSV file will have the following structure:
@@ -56,13 +61,5 @@ The output CSV file will have the following structure:
 | M2        | 0.91| 0.83| 7.0 | 31.7| 10.11| 0.2819       | 8    |
 | ...       | ... | ... | ... | ... | ...  | ...          | ...  |
 
-```javascript
-guryansh_topsis 102218044-data.csv ".25,.25,.25,.25,.25" "-,+,+,+,+" output.csv
-
-```
-
-
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-
