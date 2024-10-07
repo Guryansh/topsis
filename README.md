@@ -43,8 +43,8 @@ The input CSV file should have the following structure:
 | M2        | 0.91| 0.83| 7.0 | 31.7| 10.11|
 | ...       | ... | ... | ... | ... | ... |
 
-weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 , 0.25 ]
-impacts vector = [ - , + , + , + , + ]
+- weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 , 0.25 ]
+- impacts vector = [ - , + , + , + , + ]
 
 ### Sample Output File Format
 
